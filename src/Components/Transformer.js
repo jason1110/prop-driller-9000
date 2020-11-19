@@ -1,13 +1,21 @@
 import React from 'react';
 
-function Transformer() {
+function Transformer(props) {
 
+// eachImage = () => {   
+//   return props.proptimusii.map(proptimus => {
+//     console.log(proptimus)
+//     return (<img
+//     className = 'transformer'
+//     src = {proptimus.url}
+//     alt = {proptimus.name} />
+//   )
+// })
+// }
   return (
-    <img
-      className = 'transformer'
-      src = {}
-      alt = {}
-    />
+    <div>
+    {/* {eachImage()} */}
+    </div>
   );
 }
 
