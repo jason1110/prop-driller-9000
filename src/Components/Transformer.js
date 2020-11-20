@@ -2,19 +2,20 @@ import React from 'react';
 
 function Transformer(props) {
 
-// eachImage = () => {   
-//   return props.proptimusii.map(proptimus => {
-//     console.log(proptimus)
-//     return (<img
-//     className = 'transformer'
-//     src = {proptimus.url}
-//     alt = {proptimus.name} />
-//   )
-// })
-// }
+const { transformer } = props
+const { url, name } = transformer
+
+
+
   return (
     <div>
-    {/* {eachImage()} */}
+      <img
+        onClick={props.onClick}
+        className = 'transformer'
+        src = {url}
+        alt = {name} 
+        key = {transformer.id}
+      />
     </div>
   );
 }
